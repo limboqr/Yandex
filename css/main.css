@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Golos Text", sans-serif;
+  line-height: 120%;
+  color: #313131;
+}
+
+.container {
+  max-width: 1252px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  color: #313131;
+  font-family: "Merriweather", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+button {
+  background: transparent;
+}
+
+.line {
+  height: 60px;
+  background: #f54932;
+  overflow: hidden;
+}
+
+.liner {
+  background: url(../img/header/running-line.svg) no-repeat;
+  height: 60px;
+  width: 2335px;
+  animation: line 20s infinite linear;
+}
+@keyframes line {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.header {
+  background: url(../../img/header/header-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  padding: 26px 0 130px;
+}
+.header__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.header__content {
+  grid-column: span 6;
+  max-width: 542px;
+}
+.header__title {
+  margin-top: 62px;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 90%;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+.header__title--top {
+  font-size: 60px;
+  display: block;
+  text-align: left;
+}
+.header__title--end {
+  font-size: 60px;
+  display: block;
+  text-align: right;
+}
+.header__text {
+  margin: 24px 0 40px;
+  text-align: center;
+}
+.header__buttons {
+  display: flex;
+  gap: 16px;
+}
+.header__button {
+  border-radius: 66px;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  flex-basis: 263px;
+  height: 72px;
+}
+.header__button--black {
+  background: #1f1f1f;
+  font-size: 16px;
+  line-height: 130%;
+}
+.header__button p {
+  flex-basis: 165px;
+}
+.header__button--1 {
+  color: #fff;
+}
+
+.footer {
+  background: #E9DED4;
+  padding: 40px 0 72px;
+}
+.footer__text {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.tournament {
+  padding: 80px 0 200px;
+}
+.tournament__title--none {
+  display: none;
+}
+.tournament__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 64px 17px;
+}
+.tournament__item--1 {
+  grid-column: span 8;
+  max-width: 760px;
+  align-self: center;
+}
+.tournament__item--2 {
+  grid-column: span 4;
+}
+.tournament__item--3 {
+  grid-column: span 5;
+}
+.tournament__item--4 {
+  grid-column: span 7;
+}
+.tournament__text {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+.tournament__text span {
+  color: #f54932;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 135%;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+}
+.tournament__problem {
+  color: #3057a2;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.stages {
+  padding-bottom: 200px;
+}
+.stages__box {
+  position: relative;
+  max-width: 800px;
+}
+.stages__title {
+  margin-top: -10px;
+}
+.stages__subtitle {
+  position: absolute;
+  bottom: 10px;
+  left: 301px;
+  max-width: 280px;
+  color: #3057a2;
+  font-size: 20px;
+  font-weight: 400;
+}
+.stages__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0 20px;
+  margin-top: 54px;
+}
+.stages__item {
+  position: relative;
+  padding: 20px;
+  grid-column: span 4;
+  background: url(../../img/stage/bg-item.png) no-repeat;
+  background-size: cover;
+}
+.stages__item--small {
+  height: 112px;
+}
+.stages__item--3 {
+  grid-row: span 2;
+  height: 248px;
+}
+.stages__item--6 {
+  height: 136px;
+}
+.stages__item--7 {
+  grid-column: span 8;
+  height: 136px;
+  position: relative;
+}
+.stages__item--7::after {
+  content: "";
+  background: url(../img/stage/plane.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  width: 401px;
+  height: 235px;
+}
+.stages__number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 60px;
+  background: #fff;
+}
+.stages__text {
+  margin-left: 52px;
+  font-size: 20px;
+  max-width: 300px;
+}
+.stages__text--7 {
+  max-width: 446px;
+}

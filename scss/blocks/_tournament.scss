@@ -1,0 +1,56 @@
+.tournament {
+   padding: 80px 0 200px;
+
+   &__title--none {
+      display: none;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 64px 17px;
+   }
+
+   &__item {
+      &--1 {
+         grid-column: span 8;
+         max-width: 760px;
+         align-self: center;
+      }
+      &--2 {
+         grid-column: span 4;
+      }
+      &--3 {
+         grid-column: span 5;
+      }
+      &--4 {
+         grid-column: span 7;
+      }
+   }
+
+   &__text {
+      font-family: $font-sub;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 135%;
+      text-transform: uppercase;
+
+      & span {
+         color: #f54932;
+         font-size: 36px;
+         font-weight: 700;
+         line-height: 135%;
+         font-family: $font-sub;
+         text-transform: uppercase;
+      }
+   }
+
+   &__problem {
+      color: #3057a2;
+      font-size: 20px;
+      font-weight: 400;
+   }
+
+   // .table {
+   // }
+}

@@ -1,0 +1,89 @@
+.stages {
+   padding-bottom: 200px;
+
+   &__box {
+      position: relative;
+      max-width: 800px;
+   }
+
+   &__title {
+      margin-top: -10px;
+   }
+
+   &__subtitle {
+      position: absolute;
+      bottom: 10px;
+      left: 301px;
+      max-width: 280px;
+
+      color: #3057a2;
+      font-size: 20px;
+      font-weight: 400;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 0 20px;
+      margin-top: 54px;
+   }
+
+   &__item {
+      position: relative;
+      padding: 20px;
+      grid-column: span 4;
+      background: url(../../img/stage/bg-item.png) no-repeat;
+      background-size: cover;
+
+      &--small {
+         height: 112px;
+      }
+
+      &--3 {
+         grid-row: span 2;
+         height: 248px;
+      }
+
+      &--6 {
+         height: 136px;
+      }
+
+      &--7 {
+         grid-column: span 8;
+         height: 136px;
+         position: relative;
+
+         &::after {
+            content: "";
+            background: url(../img/stage/plane.png) no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: -60px;
+            width: 401px;
+            height: 235px;
+         }
+      }
+   }
+
+   &__number {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 60px;
+      background: #fff;
+   }
+
+   &__text {
+      margin-left: 52px;
+      font-size: 20px;
+      max-width: 300px;
+
+      &--7 {
+         max-width: 446px;
+      }
+   }
+}

@@ -1,0 +1,66 @@
+// * Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap");
+
+$font-main: "Golos Text", sans-serif;
+$font-sub: "Merriweather", serif;
+
+// * Color
+
+$main: #313131;
+
+// * Base
+
+* {
+   font-size: 18px;
+   font-weight: 500;
+   font-family: $font-main;
+   line-height: 120%;
+   color: $main;
+}
+
+.container {
+   max-width: 1252px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+}
+
+.title {
+   color: $main;
+   font-family: $font-sub;
+   font-size: 54px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+button {
+   background: transparent;
+}
+
+.line {
+   height: 60px;
+   background: #f54932;
+   overflow: hidden;
+}
+
+.liner {
+   background: url(../img/header/running-line.svg) no-repeat;
+   height: 60px;
+   width: 2335px;
+
+   animation: line 20s infinite linear;
+
+   @keyframes line {
+      from {
+         transform: translateX(-100%);
+      }
+
+      to {
+         transform: translateX(100%);
+      }
+   }
+}
