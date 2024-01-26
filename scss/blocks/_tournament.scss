@@ -8,7 +8,7 @@
    &__grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 64px 17px;
+      gap: 64px 20px;
    }
 
    &__item {
@@ -22,6 +22,7 @@
       }
       &--3 {
          grid-column: span 5;
+         transform: translateX(-27px);
       }
       &--4 {
          grid-column: span 7;
@@ -50,7 +51,56 @@
       font-size: 20px;
       font-weight: 400;
    }
+}
 
-   // .table {
-   // }
+.table {
+   margin: 60px 0 48px;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+
+   &__column {
+      grid-column: span 3;
+
+      &--big {
+         grid-column: span 4;
+      }
+   }
+
+   &__cell {
+      padding: 15px 0;
+      border-bottom: 2px solid #D0D0D0;
+
+      &:first-child {
+         padding-top: 0;
+      }
+
+      &:last-child {
+         border-bottom: 0 solid #D0D0D0;
+         padding-bottom: 0;
+      }
+   }
+
+   &__thin {
+      padding-right: 16px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.7;
+      border-right: 1px solid #D0D0D0;
+   }
+
+   &__bold {
+      padding-left: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      border-left: 1px solid #D0D0D0;
+
+      & del {
+         margin-right: 12px;
+         font-size: 20px;
+         font-weight: 600;
+         text-decoration-color: #f54932;
+      }
+   }
 }

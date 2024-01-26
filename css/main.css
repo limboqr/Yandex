@@ -194,18 +194,18 @@ button {
 }
 .header__button--black {
   background: #1f1f1f;
-  font-size: 16px;
-  line-height: 130%;
 }
 .header__button p {
   flex-basis: 165px;
+  font-size: 16px;
+  line-height: 130%;
 }
 .header__button--1 {
   color: #fff;
 }
 
 .footer {
-  background: #E9DED4;
+  background: #e9ded4;
   padding: 40px 0 72px;
 }
 .footer__text {
@@ -223,7 +223,7 @@ button {
 .tournament__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 64px 17px;
+  gap: 64px 20px;
 }
 .tournament__item--1 {
   grid-column: span 8;
@@ -235,6 +235,7 @@ button {
 }
 .tournament__item--3 {
   grid-column: span 5;
+  transform: translateX(-27px);
 }
 .tournament__item--4 {
   grid-column: span 7;
@@ -260,6 +261,50 @@ button {
   font-weight: 400;
 }
 
+.table {
+  margin: 60px 0 48px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.table__column {
+  grid-column: span 3;
+}
+.table__column--big {
+  grid-column: span 4;
+}
+.table__cell {
+  padding: 15px 0;
+  border-bottom: 2px solid #D0D0D0;
+}
+.table__cell:first-child {
+  padding-top: 0;
+}
+.table__cell:last-child {
+  border-bottom: 0 solid #D0D0D0;
+  padding-bottom: 0;
+}
+.table__thin {
+  padding-right: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  border-right: 1px solid #D0D0D0;
+}
+.table__bold {
+  padding-left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  border-left: 1px solid #D0D0D0;
+}
+.table__bold del {
+  margin-right: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration-color: #f54932;
+}
+
 .stages {
   padding-bottom: 200px;
 }
@@ -267,12 +312,9 @@ button {
   position: relative;
   max-width: 800px;
 }
-.stages__title {
-  margin-top: -10px;
-}
 .stages__subtitle {
   position: absolute;
-  bottom: 10px;
+  bottom: 16px;
   left: 301px;
   max-width: 280px;
   color: #3057a2;
@@ -284,7 +326,7 @@ button {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0 20px;
-  margin-top: 54px;
+  margin-top: 44px;
 }
 .stages__item {
   position: relative;
@@ -307,6 +349,7 @@ button {
   grid-column: span 8;
   height: 136px;
   position: relative;
+  margin-left: 5px;
 }
 .stages__item--7::after {
   content: "";
@@ -326,6 +369,8 @@ button {
   height: 36px;
   border-radius: 60px;
   background: #fff;
+  font-size: 20px;
+  font-weight: 600;
 }
 .stages__text {
   margin-left: 52px;
@@ -334,4 +379,80 @@ button {
 }
 .stages__text--7 {
   max-width: 446px;
+}
+
+.player {
+  padding-bottom: 140px;
+}
+.player__content {
+  position: relative;
+}
+.player__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.slider-wrapper {
+  margin-top: 60px;
+}
+
+.slider__pagination {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.slider__numbs {
+  margin-top: 5px;
+}
+
+.swiper-pagination-current {
+  position: relative;
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 1;
+}
+
+.swiper-pagination-total {
+  color: #313131;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.6;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 28px;
+}
+.slide__text {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin: 6px 0 20px;
+}
+.slide__link {
+  color: #3057a2;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  height: 35px;
+  border-radius: 62px;
+  border: 1px solid #3057a2;
 }

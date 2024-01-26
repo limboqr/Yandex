@@ -6,13 +6,9 @@
       max-width: 800px;
    }
 
-   &__title {
-      margin-top: -10px;
-   }
-
    &__subtitle {
       position: absolute;
-      bottom: 10px;
+      bottom: 16px;
       left: 301px;
       max-width: 280px;
 
@@ -26,7 +22,7 @@
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 0 20px;
-      margin-top: 54px;
+      margin-top: 44px;
    }
 
    &__item {
@@ -53,6 +49,7 @@
          grid-column: span 8;
          height: 136px;
          position: relative;
+         margin-left: 5px;
 
          &::after {
             content: "";
@@ -75,6 +72,9 @@
       height: 36px;
       border-radius: 60px;
       background: #fff;
+
+      font-size: 20px;
+      font-weight: 600;
    }
 
    &__text {
